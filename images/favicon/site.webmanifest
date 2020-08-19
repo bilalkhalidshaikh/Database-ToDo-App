@@ -1,0 +1,43 @@
+{
+    "name": "ToDo App",
+    "short_name": "ToDo List",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#999",
+    "theme_color": "#ccc",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "./images/noun_todo list_3148616.png",
+        "type": "image/png", "sizes": "72x72"
+      },
+      {
+        "src": "./images/noun_todo list_3148616.png",
+        "type": "image/png", "sizes": "96x96"
+      },
+      {
+        "src": "./images/noun_todo list_3148616.png",
+        "type": "image/png","sizes": "128x128"
+      },
+      {
+        "src": "./images/noun_todo list_3148616.png",
+        "type": "image/png", "sizes": "144x144"
+      },
+      {
+        "src": "./images/noun_todo list_3148616.png",
+        "type": "image/png", "sizes": "152x152"
+      },
+      {
+        "src": "./images/noun_todo list_3148616.png",
+        "type": "image/png", "sizes": "192x192"
+      },
+      {
+        "src": "./images/noun_todo list_3148616.png",
+        "type": "image/png", "sizes": "384x384"
+      },
+      {
+        "src": "./images/noun_todo list_3148616.png",
+        "type": "image/png", "sizes": "512x512"
+      }
+    ]
+  }

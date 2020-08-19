@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+body {
+  background-image: url("./images/undraw_to_do_list_a49b.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center !important;
+  align-items: center;
+  justify-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.hidden {
+  display: none;
+}
+li {
+  list-style-type: none;
+  font-size: 1.4rem;
+  margin-bottom: 10px !important;
+  color: #333;
+  font-weight: 600;
+  background-color: transparent;
+  box-shadow: inset 2px 2px 2px 2px #ccc;
+  padding-top: 10px;
+  transform-origin: 0 100%;
+}
+li > i {
+  font-size: 1.5rem !important;
+}
+.btn {
+  cursor: pointer;
+}
+.btn:hover{
+  transition: all ease !important;
+  transform: scale(1);
+  transform: rotate3d(360deg);
+}
+.additem:hover{
+  transition: all ease !important;
+  transform: scale(1);
+  transform: rotate3d(360deg);
+}
+.additem {
+  width: 50px;
+  height: 50px;
+}
+.editbtn {
+  width: 50px !important;
+  height: 50px !important;
+}
+.delbtn {
+  width: 70px !important;
+  height: 60px !important;
+}
+.trash {
+  width: 40px;
+  height: 40px;
+}
+.container {
+  width: 100% !important;
+  height: 100vh !important;
+  align-items: center !important;
+  justify-items: center !important;
+}
+.form-control {
+  padding: 20px 20px !important;
+}
+
+/* Animation */
+
+.ml5 {
+  position: relative;
+  font-weight: 300;
+  font-size: 4.5em;
+  color: #402d2d;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.ml5 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background-color: #402d2d;
+  transform-origin: 0.5 0;
+}
+
+.ml5 .ampersand {
+  font-family: Baskerville, serif;
+  font-style: italic;
+  font-weight: 400;
+  width: 1em;
+  margin-right: -0.1em;
+  margin-left: -0.1em;
+}
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
+}
+@keyframes input{
+  25%{
+    opacity: 0.2;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  75%{
+    opacity: 0.7;
+  }
+  100%{
+    opacity: 1;
+    transition: all ease 3s;
+    transition: stroke-dashoffset 3s;
+    transition-timing-function: linear;
+    stroke-dashoffset: 0;
+  }
+  }
+/* Animation */
