@@ -15,8 +15,29 @@ firebase.analytics();
 
 window.onload = () => {
   container.style.display = "none";
-  loading.innerHTML =
-    "<h1 class='ml10'><span class='text-wrapper'><span class='letters'>Loading.... <img src='./images/Spinner-1s-200px.svg' /></span></span></h1>";
+  loading.innerHTML = `<h1 class='ml10'>
+    <span class='text-wrapper'>
+    <span class='letters'>
+    Loading.... 
+    <img src='./images/Spinner-1s-200px.svg' />
+    </span>
+    </span>
+    </h1>
+    <br /> 
+    <br /> 
+    <br /> 
+    <div class='credit container-fluid'>
+    Developed with <i class='fa fa-heart'></i> By Bilal Shaikh
+    <h1 class="ml1">
+    <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters"><div class='credit container-fluid'>
+    Developed with <i class='fa fa-heart'></i> By Bilal Shaikh </div></span>
+    <span class="line line2"></span>
+    </span>
+    </h1>
+   
+    `;
   body.style.backgroundImage = "url('./images/undraw_loading_frh4.png')";
   body.style.backgroundSize = "cover";
   body.style.backgroundAttachment = "fixed";
@@ -52,6 +73,10 @@ db.ref("Todos").on("child_added", (data) => {
   var li = document.createElement("li");
   li.className = "li";
   li.id = "demo";
+  var voice = document.createElement("img");
+  voice.src = "./images/icons8-microphone-48.png";
+  voice.className = "voice btn";
+  voice.setAttribute("onclick", "voiceBtn(this)");
   var deleteBtn = document.createElement("img");
   deleteBtn.src = "./images/icons8-trash-50-removebg-preview.png";
   var editBtn = document.createElement("img");
@@ -67,6 +92,7 @@ db.ref("Todos").on("child_added", (data) => {
   li.appendChild(todoText);
   li.appendChild(deleteBtn);
   li.appendChild(editBtn);
+  li.appendChild(voice);
   todoInput.value = "";
 });
 todoInput.addEventListener("keyup", (event) => {
@@ -91,6 +117,11 @@ addBtn.onclick = () => {
     todoList.style.display = "none";
   }
 };
+
+function voiceBtn(e) {
+  var msg = new SpeechSynthesisUtterance(e.parentNode.firstChild.nodeValue);
+  window.speechSynthesis.speak(msg);
+}
 
 function delBtn(e) {
   e.parentNode.remove();
@@ -118,7 +149,7 @@ clear.onclick = function delAll() {
 };
 todoInput.onfocus = () => {
   todoInput.style.boxShadow = " 10px 10px 20px 5px";
-  todoInput.style.animation = "input 3s ease 1"
+  todoInput.style.animation = "input 3s ease 1";
 };
 todoInput.onblur = () => {
   todoInput.style.boxShadow = "none";
