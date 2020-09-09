@@ -10,6 +10,7 @@ const assets = [
   "/images/undraw_to_do_list_a49b.svg",
   "/images/noun_todo list_3148616.png",
   "/images/favicon/android-chrome-192x192.png",
+  "./images/icons8-microphone-48.png",
 ];
 
 self.addEventListener("install", (installEvent) => {
