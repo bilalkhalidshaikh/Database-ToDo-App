@@ -34,17 +34,21 @@ li > i {
 .btn {
   cursor: pointer;
 }
-.btn:hover{
+.btn:hover {
   transition: all ease !important;
   transform: scale(1);
   transform: rotate3d(360deg);
 }
-.additem:hover{
+.additem:hover {
   transition: all ease !important;
   transform: scale(1);
   transform: rotate3d(360deg);
 }
 .additem {
+  width: 50px;
+  height: 50px;
+}
+.voice{
   width: 50px;
   height: 50px;
 }
@@ -69,8 +73,57 @@ li > i {
 .form-control {
   padding: 20px 20px !important;
 }
-
+.credit{
+  background-color:#ccc;
+  margin-top: 25%;
+  width: 20rem !important;
+  height: 4rem !important;
+  font-size: 1.5rem;
+}
+.fa-heart{
+  color: red;
+}
 /* Animation */
+
+.ml1 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.ml1 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml1 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml1 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 0 0;
+}
+
+.ml1 .line1 { top: 0; }
+.ml1 .line2 { bottom: 0; }
+
+
+
+
+
+
+
+
+
 
 .ml5 {
   position: relative;
@@ -113,22 +166,22 @@ li > i {
   display: inline-block;
   opacity: 0;
 }
-@keyframes input{
-  25%{
+@keyframes input {
+  25% {
     opacity: 0.2;
   }
-  50%{
+  50% {
     opacity: 0.5;
   }
-  75%{
+  75% {
     opacity: 0.7;
   }
-  100%{
+  100% {
     opacity: 1;
     transition: all ease 3s;
     transition: stroke-dashoffset 3s;
     transition-timing-function: linear;
     stroke-dashoffset: 0;
   }
-  }
+}
 /* Animation */
